@@ -1,8 +1,8 @@
-defmodule Auth.Factories.RegistrationForms do
+defmodule Auth.Factories.AuthForms do
   defmacro __using__(_opts) do
     quote do
-      def registration_form_factory do
-        %Auth.RegistrationForm{
+      def auth_form_factory do
+        %Auth.AuthForm{
           email: Faker.Internet.email(),
           password: Faker.String.base64()
         }
