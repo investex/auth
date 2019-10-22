@@ -14,7 +14,7 @@ defmodule Auth.Authentication do
 
   defp load_user(%{email: email, password: password}) do
     User
-    |> try_catch(Repo.get_by!(email: email))
+    |> Repo.fetch_by(email: email)
     >>> bind(Map.from_struct)
     >>> bind(Map.put(:password, password))
   end
