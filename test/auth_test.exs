@@ -23,7 +23,7 @@ defmodule AuthTest do
 
   describe "authenticate" do
     test "returns an error when no user matches email" do
-      assert {:error, _} = Auth.authenticate(%{email: "", password: ""})
+      assert {:error, _} = Auth.authenticate(%{email: "bad@email", password: "badpassword"}) |> IO.inspect
     end
 
     test "returns an error when email matches but password does not", %{email: email, password: password} = _ do
