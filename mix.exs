@@ -26,6 +26,7 @@ defmodule Auth.MixProject do
       {:argon2_elixir, "~> 2.0.5"},
       {:rop, git: "https://github.com/ryantaylor/rop.git"},
       {:persistence, path: "/Users/ryantaylor/Code/invest/persistence"},
+      {:utils, path: "/Users/ryantaylor/Code/invest/utils"},
       {:ex_machina, "~> 2.3", only: :test},
       {:faker, "~> 0.13", only: :test}
     ]
