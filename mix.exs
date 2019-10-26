@@ -8,7 +8,7 @@ defmodule Auth.MixProject do
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      elixirc_paths: elixirc_paths(Mix.env),
+      elixirc_paths: elixirc_paths(Mix.env()),
       aliases: aliases()
     ]
   end
@@ -34,7 +34,15 @@ defmodule Auth.MixProject do
 
   # This makes sure your factory and any other modules in test/support are compiled
   # when in the test environment.
-  defp elixirc_paths(:test), do: ["lib", "test/support", "test/factories", "/Users/ryantaylor/Code/invest/persistence/test/support", "/Users/ryantaylor/Code/invest/persistence/test/factories"]
+  defp elixirc_paths(:test),
+    do: [
+      "lib",
+      "test/support",
+      "test/factories",
+      "/Users/ryantaylor/Code/invest/persistence/test/support",
+      "/Users/ryantaylor/Code/invest/persistence/test/factories"
+    ]
+
   defp elixirc_paths(_), do: ["lib"]
 
   defp aliases do

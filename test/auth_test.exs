@@ -28,7 +28,8 @@ defmodule AuthTest do
       assert {:error, _} = Auth.authenticate(params)
     end
 
-    test "returns an error when email matches but password does not", %{params: %{user: %{email: email}} = params} = _ do
+    test "returns an error when email matches but password does not",
+         %{params: %{user: %{email: email}} = params} = _ do
       bad_params = %{user: %{email: email, password: "wrong"}}
       Auth.register(params)
       assert {:error, _} = Auth.authenticate(bad_params)
