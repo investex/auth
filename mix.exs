@@ -27,14 +27,14 @@ defmodule Auth.MixProject do
       {:rop, git: "https://github.com/ryantaylor/rop.git"},
       {:persistence, path: "/Users/ryantaylor/Code/invest/persistence"},
       {:utils, path: "/Users/ryantaylor/Code/invest/utils"},
-      {:ex_machina, "~> 2.3", only: :test},
-      {:faker, "~> 0.13", only: :test}
+      {:ex_machina, "~> 2.3", only: [:test, :dev]},
+      {:faker, "~> 0.13", only: [:test, :dev]}
     ]
   end
 
   # This makes sure your factory and any other modules in test/support are compiled
   # when in the test environment.
-  defp elixirc_paths(:test),
+  defp elixirc_paths(params) when params in [:dev, :test],
     do: [
       "lib",
       "test/support",
