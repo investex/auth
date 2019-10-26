@@ -1,7 +1,7 @@
 defmodule AuthFormTest do
   use Auth.RepoCase
   import Auth.Factory
-  alias Auth.AuthForm
+  alias Auth.Forms.AuthForm
 
   describe "validations" do
     setup do
