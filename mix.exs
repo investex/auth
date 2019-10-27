@@ -39,8 +39,8 @@ defmodule Invest.Auth.MixProject do
       "lib",
       "test/support",
       "test/factories",
-      "deps/persistence/test/support",
-      "deps/persistence/test/factories"
+      "deps/invest_persistence/test/support",
+      "deps/invest_persistence/test/factories"
     ]
 
   defp elixirc_paths(_), do: ["lib"]
