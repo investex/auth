@@ -1,4 +1,4 @@
-defmodule Auth.Factories.UserParams do
+defmodule Invest.Auth.Factories.UserParams do
   defmacro __using__(_opts) do
     quote do
       def user_params_factory do

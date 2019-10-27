@@ -1,4 +1,4 @@
-defmodule Auth.RepoCase do
+defmodule Invest.Auth.RepoCase do
   use ExUnit.CaseTemplate
 
   using do
@@ -7,7 +7,7 @@ defmodule Auth.RepoCase do
 
       import Ecto
       import Ecto.Query
-      import Auth.RepoCase
+      import Invest.Auth.RepoCase
 
       # and any other stuff
     end

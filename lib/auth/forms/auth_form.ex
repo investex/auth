@@ -1,10 +1,10 @@
-defmodule Auth.Forms.AuthForm do
+defmodule Invest.Auth.Forms.AuthForm do
   use Ecto.Schema
   use Rop
 
   import Utils.Rop
 
-  alias Auth.Forms.AuthForm
+  alias Invest.Auth.Forms.AuthForm
 
   embedded_schema do
     field :email, :string

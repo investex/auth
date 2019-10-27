@@ -1,9 +1,9 @@
-defmodule Auth.MixProject do
+defmodule Invest.Auth.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :auth,
+      app: :invest_auth,
       version: "0.1.0",
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,

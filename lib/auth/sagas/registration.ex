@@ -1,9 +1,9 @@
-defmodule Auth.Sagas.Registration do
+defmodule Invest.Auth.Sagas.Registration do
   use Rop
 
   import Utils.Rop
 
-  alias Auth.Forms.AuthForm
+  alias Invest.Auth.Forms.AuthForm
   alias Invest.Persistence.{Repo, User}
 
   def process(%{user: _} = params) do

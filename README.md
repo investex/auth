@@ -10,7 +10,7 @@ by adding `auth` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:auth, "~> 0.1.0"}
+    {:invest_auth, "~> 0.1.0"}
   ]
 end
 ```
