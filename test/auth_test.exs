@@ -1,7 +1,7 @@
 defmodule AuthTest do
   use Auth.RepoCase
   import Auth.Factory
-  alias Persistence.User
+  alias Invest.Persistence.User
 
   setup do
     %{params: %{user: build(:user_params)}}

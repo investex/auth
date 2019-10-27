@@ -3,7 +3,7 @@ defmodule Auth.RepoCase do
 
   using do
     quote do
-      alias Persistence.Repo
+      alias Invest.Persistence.Repo
 
       import Ecto
       import Ecto.Query
@@ -14,10 +14,10 @@ defmodule Auth.RepoCase do
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Persistence.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Invest.Persistence.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Persistence.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Invest.Persistence.Repo, {:shared, self()})
     end
 
     :ok

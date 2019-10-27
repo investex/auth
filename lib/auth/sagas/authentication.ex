@@ -4,7 +4,7 @@ defmodule Auth.Sagas.Authentication do
   import Utils.Rop
 
   alias Auth.Forms.AuthForm
-  alias Persistence.{Repo, User}
+  alias Invest.Persistence.{Repo, User}
 
   def process(%{user: _} = params) do
     params
